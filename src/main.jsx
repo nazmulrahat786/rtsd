@@ -39,6 +39,10 @@ const router = createBrowserRouter([
   loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.usersId}`),
 
   Component: Userdtl
+},
+{
+  path: "*",
+  element: <div style={{textAlign: 'center', fontSize: '30px', color: 'red'}}>404 Not Found</div>
 }
 
 
